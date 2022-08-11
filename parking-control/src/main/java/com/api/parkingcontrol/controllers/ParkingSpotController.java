@@ -29,9 +29,9 @@ import java.util.UUID;
 @RequestMapping("/parking-spot")
 public class ParkingSpotController {
 
-    private static Logger logger = LoggerFactory.getLogger(ParkingSpotController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ParkingSpotController.class);
 
-    private ParkingSpotService parkingSpotService;
+    private final ParkingSpotService parkingSpotService;
 
     @Autowired
     public ParkingSpotController(ParkingSpotService parkingSpotService) {
